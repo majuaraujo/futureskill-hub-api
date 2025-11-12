@@ -1,0 +1,30 @@
+### Criar usuário
+POST http://localhost:8080/api/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Maria Julia",
+  "email": "maju@fiap.com",
+  "areaAtuacao": "Tecnologia e Inovação",
+  "nivelCarreira": "Em Transição"
+}
+
+### Listar todos os usuários
+GET http://localhost:8080/api/usuarios
+
+###  Buscar usuário por ID
+GET http://localhost:8080/api/usuarios/1
+
+### Atualizar usuário
+PUT http://localhost:8080/api/usuarios/1
+Content-Type: application/json
+
+{
+  "nome": "Maria Julia Araujo",
+  "email": "majuaraujo@fiap.com",
+  "areaAtuacao": "Gestão de Projetos",
+  "nivelCarreira": "Analista Júnior"
+}
+
+### Deletar usuário
+DELETE http://localhost:8080/api/usuarios/1
